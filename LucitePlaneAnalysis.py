@@ -2,7 +2,7 @@
 import sys
 #sys.path.append('/home/seehrar/.local/lib/python3.6/site-packages')
 #sys.path.append('/home/seehrar/.local/lib/python3.7/site-packages')
-sys.path.append('/home/seehrar/.local/lib/python3.8/site-packages')
+#sys.path.append('/home/seehrar/.local/lib/python3.8/site-packages')
 import uproot
 import numpy as np
 import pandas as pd
