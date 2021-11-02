@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 import sys
-sys.path.append('/home/seehrar/.local/lib/python3.8/site-packages')
+#sys.path.append('/home/seehrar/.local/lib/python3.8/site-packages')
 
 import uproot
 import numpy as np
