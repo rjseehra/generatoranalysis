@@ -19,12 +19,6 @@ import tables
 import six
 import mplhep as hep
 
-#WHAT DETECTOR?
-Detector = 32
-
-# For Detector 31, (hitr > 1020) * (hitr < 1180)
-# For Detector 32, (hitr > 1029.059) * (hitr < 1189.057)
-
 #MULTIPLIER
 #For everything but pion
 M = (((0.000000001) / 85 ) / 14 / 500)
