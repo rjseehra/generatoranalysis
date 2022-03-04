@@ -120,15 +120,15 @@ for rate, hitr, hitp, hitdet, hitpid, hittrid, hitphi in uproot.iterate(["/home/
     rate_jagged_c15=ak.flatten((ak.ones_like(hitr[c15])) * (rate * M))
     rate_jagged_c16=ak.flatten((ak.ones_like(hitr[c16])) * (rate * M))
 
-    rate_jagged_c17=ak.flatten((ak.ones_like(hitr[c13])) * (rate * M))
-    rate_jagged_c18=ak.flatten((ak.ones_like(hitr[c14])) * (rate * M))
-    rate_jagged_c19=ak.flatten((ak.ones_like(hitr[c15])) * (rate * M))
-    rate_jagged_c20=ak.flatten((ak.ones_like(hitr[c16])) * (rate * M))
+    rate_jagged_c17=ak.flatten((ak.ones_like(hitr[c17])) * (rate * M))
+    rate_jagged_c18=ak.flatten((ak.ones_like(hitr[c18])) * (rate * M))
+    rate_jagged_c19=ak.flatten((ak.ones_like(hitr[c19])) * (rate * M))
+    rate_jagged_c20=ak.flatten((ak.ones_like(hitr[c20])) * (rate * M))
     
-    rate_jagged_c21=ak.flatten((ak.ones_like(hitr[c13])) * (rate * M))
-    rate_jagged_c22=ak.flatten((ak.ones_like(hitr[c14])) * (rate * M))
-    rate_jagged_c23=ak.flatten((ak.ones_like(hitr[c15])) * (rate * M))
-    rate_jagged_c24=ak.flatten((ak.ones_like(hitr[c16])) * (rate * M))
+    rate_jagged_c21=ak.flatten((ak.ones_like(hitr[c21])) * (rate * M))
+    rate_jagged_c22=ak.flatten((ak.ones_like(hitr[c22])) * (rate * M))
+    rate_jagged_c23=ak.flatten((ak.ones_like(hitr[c23])) * (rate * M))
+    rate_jagged_c24=ak.flatten((ak.ones_like(hitr[c24])) * (rate * M))
     
     beam_c1.fill((np.array(ak.flatten(hitr[c1]))), weight = rate_jagged_c1)
     beam_c2.fill((np.array(ak.flatten(hitr[c2]))), weight = rate_jagged_c2)
@@ -150,15 +150,15 @@ for rate, hitr, hitp, hitdet, hitpid, hittrid, hitphi in uproot.iterate(["/home/
     beam_c15.fill((np.array(ak.flatten(hitr[c15]))), weight = rate_jagged_c15)
     beam_c16.fill((np.array(ak.flatten(hitr[c16]))), weight = rate_jagged_c16)
     
-    beam_c17.fill((np.array(ak.flatten(hitr[c9]))), weight = rate_jagged_c9)
-    beam_c18.fill((np.array(ak.flatten(hitr[c10]))), weight = rate_jagged_c10)
-    beam_c19.fill((np.array(ak.flatten(hitr[c11]))), weight = rate_jagged_c11)
-    beam_c20.fill((np.array(ak.flatten(hitr[c12]))), weight = rate_jagged_c12)
+    beam_c17.fill((np.array(ak.flatten(hitr[c9]))), weight = rate_jagged_c17)
+    beam_c18.fill((np.array(ak.flatten(hitr[c10]))), weight = rate_jagged_c18)
+    beam_c19.fill((np.array(ak.flatten(hitr[c11]))), weight = rate_jagged_c19)
+    beam_c20.fill((np.array(ak.flatten(hitr[c12]))), weight = rate_jagged_c20)
     
-    beam_c21.fill((np.array(ak.flatten(hitr[c13]))), weight = rate_jagged_c13)
-    beam_c22.fill((np.array(ak.flatten(hitr[c14]))), weight = rate_jagged_c14)
-    beam_c23.fill((np.array(ak.flatten(hitr[c15]))), weight = rate_jagged_c15)
-    beam_c24.fill((np.array(ak.flatten(hitr[c16]))), weight = rate_jagged_c16)
+    beam_c21.fill((np.array(ak.flatten(hitr[c13]))), weight = rate_jagged_c21)
+    beam_c22.fill((np.array(ak.flatten(hitr[c14]))), weight = rate_jagged_c22)
+    beam_c23.fill((np.array(ak.flatten(hitr[c15]))), weight = rate_jagged_c23)
+    beam_c24.fill((np.array(ak.flatten(hitr[c16]))), weight = rate_jagged_c24)
     
     
 def render_mpl_table(data, col_width=1.0, row_height=1.625, font_size=27,
@@ -205,15 +205,15 @@ events_c14 = (np.array(beam_c14)[np.array(beam_c14) != 0])
 events_c15 = (np.array(beam_c15)[np.array(beam_c15) != 0])
 events_c16 = (np.array(beam_c16)[np.array(beam_c16) != 0])
 
-events_c17 = (np.array(beam_c9)[np.array(beam_c9) != 0])
-events_c18 = (np.array(beam_c10)[np.array(beam_c10) != 0])
-events_c19 = (np.array(beam_c11)[np.array(beam_c11) != 0])
-events_c20 = (np.array(beam_c12)[np.array(beam_c12) != 0])
+events_c17 = (np.array(beam_c9)[np.array(beam_c17) != 0])
+events_c18 = (np.array(beam_c10)[np.array(beam_c18) != 0])
+events_c19 = (np.array(beam_c11)[np.array(beam_c19) != 0])
+events_c20 = (np.array(beam_c12)[np.array(beam_c20) != 0])
 
-events_c21 = (np.array(beam_c13)[np.array(beam_c13) != 0])
-events_c22 = (np.array(beam_c14)[np.array(beam_c14) != 0])
-events_c23 = (np.array(beam_c15)[np.array(beam_c15) != 0])
-events_c24 = (np.array(beam_c16)[np.array(beam_c16) != 0])
+events_c21 = (np.array(beam_c13)[np.array(beam_c21) != 0])
+events_c22 = (np.array(beam_c14)[np.array(beam_c22) != 0])
+events_c23 = (np.array(beam_c15)[np.array(beam_c23) != 0])
+events_c24 = (np.array(beam_c16)[np.array(beam_c24) != 0])
 
 #NUMBER OF TOTAL EVENTS
 count_c1 = np.sum(events_c1 / 8.9e-7)
@@ -236,28 +236,28 @@ count_c14 = np.sum(events_c14 / 8.9e-7)
 count_c15 = np.sum(events_c15 / 8.9e-7)
 count_c16 = np.sum(events_c16 / 8.9e-7)
 
-count_c17 = np.sum(events_c9 / 8.9e-7)
-count_c18 = np.sum(events_c10 / 8.9e-7)
-count_c19 = np.sum(events_c11 / 8.9e-7)
-count_c20 = np.sum(events_c12 / 8.9e-7)
+count_c17 = np.sum(events_c17 / 8.9e-7)
+count_c18 = np.sum(events_c18 / 8.9e-7)
+count_c19 = np.sum(events_c19 / 8.9e-7)
+count_c20 = np.sum(events_c20 / 8.9e-7)
 
-count_c21 = np.sum(events_c13 / 8.9e-7)
-count_c22 = np.sum(events_c14 / 8.9e-7)
-count_c23 = np.sum(events_c15 / 8.9e-7)
-count_c24 = np.sum(events_c16 / 8.9e-7)
+count_c21 = np.sum(events_c21 / 8.9e-7)
+count_c22 = np.sum(events_c22 / 8.9e-7)
+count_c23 = np.sum(events_c23 / 8.9e-7)
+count_c24 = np.sum(events_c24 / 8.9e-7)
 
 
 
 
 df_beam_e = pd.DataFrame()
 df_beam_e['Detector'] = ['28','29','31','32']
-df_beam_e['(hitp < 2)'] = [("{:1.3f} ± {:1.1e}".format(np.sum(np.array(beam_c1)),(np.sqrt(((8.9e-7) ** 2) * (count_c1))))), ("{:1.3f} ± {:1.1e}".format(np.sum(np.array(beam_c5)),(np.sqrt(((8.9e-7) ** 2) * (count_c5))))), ("{:1.3f} ± {:1.1e}".format(np.sum(np.array(beam_c9)),(np.sqrt(((8.9e-7) ** 2) * (count_c9))))), ("{:1.3f} ± {:1.1e}".format(np.sum(np.array(beam_c13)),(np.sqrt(((8.9e-7) ** 2) * (count_c13))))), ("{:1.3f} ± {:1.1e}".format(np.sum(np.array(beam_c17)),(np.sqrt(((8.9e-7) ** 2) * (count_c13))))), ("{:1.3f} ± {:1.1e}".format(np.sum(np.array(beam_c21)),(np.sqrt(((8.9e-7) ** 2) * (count_c13)))))]
+df_beam_e['(hitp < 2)'] = [("{:1.3f} ± {:1.1e}".format(np.sum(np.array(beam_c1)),(np.sqrt(((8.9e-7) ** 2) * (count_c1))))), ("{:1.3f} ± {:1.1e}".format(np.sum(np.array(beam_c5)),(np.sqrt(((8.9e-7) ** 2) * (count_c5))))), ("{:1.3f} ± {:1.1e}".format(np.sum(np.array(beam_c9)),(np.sqrt(((8.9e-7) ** 2) * (count_c9))))), ("{:1.3f} ± {:1.1e}".format(np.sum(np.array(beam_c13)),(np.sqrt(((8.9e-7) ** 2) * (count_c13))))), ("{:1.3f} ± {:1.1e}".format(np.sum(np.array(beam_c17)),(np.sqrt(((8.9e-7) ** 2) * (count_c17))))), ("{:1.3f} ± {:1.1e}".format(np.sum(np.array(beam_c21)),(np.sqrt(((8.9e-7) ** 2) * (count_c21)))))]
 
-df_beam_e['(hitp > 2)'] = [("{:1.3f} ± {:1.1e}".format(np.sum(np.array(beam_c2)),(np.sqrt(((8.9e-7) ** 2) * (count_c2))))), ("{:1.3f} ± {:1.1e}".format(np.sum(np.array(beam_c6)),(np.sqrt(((8.9e-7) ** 2) * (count_c6))))), ("{:1.3f} ± {:1.1e}".format(np.sum(np.array(beam_c10)),(np.sqrt(((8.9e-7) ** 2) * (count_c10))))), ("{:1.3f} ± {:1.1e}".format(np.sum(np.array(beam_c14)),(np.sqrt(((8.9e-7) ** 2) * (count_c14))))), ("{:1.3f} ± {:1.1e}".format(np.sum(np.array(beam_c18)),(np.sqrt(((8.9e-7) ** 2) * (count_c14))))), ("{:1.3f} ± {:1.1e}".format(np.sum(np.array(beam_c22)),(np.sqrt(((8.9e-7) ** 2) * (count_c14)))))]
+df_beam_e['(hitp > 2)'] = [("{:1.3f} ± {:1.1e}".format(np.sum(np.array(beam_c2)),(np.sqrt(((8.9e-7) ** 2) * (count_c2))))), ("{:1.3f} ± {:1.1e}".format(np.sum(np.array(beam_c6)),(np.sqrt(((8.9e-7) ** 2) * (count_c6))))), ("{:1.3f} ± {:1.1e}".format(np.sum(np.array(beam_c10)),(np.sqrt(((8.9e-7) ** 2) * (count_c10))))), ("{:1.3f} ± {:1.1e}".format(np.sum(np.array(beam_c14)),(np.sqrt(((8.9e-7) ** 2) * (count_c14))))), ("{:1.3f} ± {:1.1e}".format(np.sum(np.array(beam_c18)),(np.sqrt(((8.9e-7) ** 2) * (count_c18))))), ("{:1.3f} ± {:1.1e}".format(np.sum(np.array(beam_c22)),(np.sqrt(((8.9e-7) ** 2) * (count_c22)))))]
 
-df_beam_e['(hitp > 1000)'] = [("{:1.3f} ± {:1.1e}".format(np.sum(np.array(beam_c3)),(np.sqrt(((8.9e-7) ** 2) * (count_c3))))), ("{:1.3f} ± {:1.1e}".format(np.sum(np.array(beam_c7)),(np.sqrt(((8.9e-7) ** 2) * (count_c7))))), ("{:1.3f} ± {:1.1e}".format(np.sum(np.array(beam_c11)),(np.sqrt(((8.9e-7) ** 2) * (count_c11))))), ("{:1.3f} ± {:1.1e}".format(np.sum(np.array(beam_c15)),(np.sqrt(((8.9e-7) ** 2) * (count_c15))))), ("{:1.3f} ± {:1.1e}".format(np.sum(np.array(beam_c19)),(np.sqrt(((8.9e-7) ** 2) * (count_c15))))), ("{:1.3f} ± {:1.1e}".format(np.sum(np.array(beam_c23)),(np.sqrt(((8.9e-7) ** 2) * (count_c15)))))]
+df_beam_e['(hitp > 1000)'] = [("{:1.3f} ± {:1.1e}".format(np.sum(np.array(beam_c3)),(np.sqrt(((8.9e-7) ** 2) * (count_c3))))), ("{:1.3f} ± {:1.1e}".format(np.sum(np.array(beam_c7)),(np.sqrt(((8.9e-7) ** 2) * (count_c7))))), ("{:1.3f} ± {:1.1e}".format(np.sum(np.array(beam_c11)),(np.sqrt(((8.9e-7) ** 2) * (count_c11))))), ("{:1.3f} ± {:1.1e}".format(np.sum(np.array(beam_c15)),(np.sqrt(((8.9e-7) ** 2) * (count_c15))))), ("{:1.3f} ± {:1.1e}".format(np.sum(np.array(beam_c19)),(np.sqrt(((8.9e-7) ** 2) * (count_c19))))), ("{:1.3f} ± {:1.1e}".format(np.sum(np.array(beam_c23)),(np.sqrt(((8.9e-7) ** 2) * (count_c23)))))]
 
-df_beam_e['(total)'] = [("{:1.3f} ± {:1.1e}".format(np.sum(np.array(beam_c4)),(np.sqrt(((8.9e-7) ** 2) * (count_c4))))), ("{:1.3f} ± {:1.1e}".format(np.sum(np.array(beam_c8)),(np.sqrt(((8.9e-7) ** 2) * (count_c8))))), ("{:1.3f} ± {:1.1e}".format(np.sum(np.array(beam_c12)),(np.sqrt(((8.9e-7) ** 2) * (count_c12))))), ("{:1.3f} ± {:1.1e}".format(np.sum(np.array(beam_c16)),(np.sqrt(((8.9e-7) ** 2) * (count_c16))))), ("{:1.3f} ± {:1.1e}".format(np.sum(np.array(beam_c20)),(np.sqrt(((8.9e-7) ** 2) * (count_c16))))), ("{:1.3f} ± {:1.1e}".format(np.sum(np.array(beam_c24)),(np.sqrt(((8.9e-7) ** 2) * (count_c16)))))]
+df_beam_e['(total)'] = [("{:1.3f} ± {:1.1e}".format(np.sum(np.array(beam_c4)),(np.sqrt(((8.9e-7) ** 2) * (count_c4))))), ("{:1.3f} ± {:1.1e}".format(np.sum(np.array(beam_c8)),(np.sqrt(((8.9e-7) ** 2) * (count_c8))))), ("{:1.3f} ± {:1.1e}".format(np.sum(np.array(beam_c12)),(np.sqrt(((8.9e-7) ** 2) * (count_c12))))), ("{:1.3f} ± {:1.1e}".format(np.sum(np.array(beam_c16)),(np.sqrt(((8.9e-7) ** 2) * (count_c16))))), ("{:1.3f} ± {:1.1e}".format(np.sum(np.array(beam_c20)),(np.sqrt(((8.9e-7) ** 2) * (count_c20))))), ("{:1.3f} ± {:1.1e}".format(np.sum(np.array(beam_c24)),(np.sqrt(((8.9e-7) ** 2) * (count_c24)))))]
 
 df_beam_e['UNITS'] = ["GHz/uA/Detector", "GHz/uA/Detector", "GHz/uA/Detector", "GHz/uA/Detector","GHz/uA/Detector","GHz/uA/Detector"]
 
